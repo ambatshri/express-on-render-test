@@ -10,7 +10,7 @@ app.use(express.urlencoded({ extended: true }));
 
 const port = process.env.PORT || 3001;
 
-app.get("/", upload.none(), (req, res) => res.send("POST request"));
+app.get("/post", upload.none(), (req, res) => res.send("POST request"));
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
