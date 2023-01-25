@@ -5,6 +5,7 @@ const multer = require('multer');
 const upload = multer();
 
 app.use(cors())
+app.use(express.urlencoded({ extended: true }));
 
 
 const port = process.env.PORT || 3001;
